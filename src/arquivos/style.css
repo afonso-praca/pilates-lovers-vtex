@@ -523,7 +523,7 @@ input, select, textarea{
 /** ************************************************************************************ **/
 .showcase-default{
     display: block;
-    padding: 20px 0;
+    padding: 20px 0 0 0;
 }
 .showcase-owl .owl-controls .owl-buttons > div{
     width: 30px;
@@ -540,12 +540,13 @@ input, select, textarea{
     height: 40px;
 }
 .showcase-default h2{
-    color: #545454;
+    color: #737373;
     display: block;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
     line-height: 28px;
     padding-bottom: 10px;
+    text-transform: uppercase;
 }
 
 .prateleira.vitrine > ul{
@@ -800,7 +801,7 @@ input, select, textarea{
     margin-bottom: 25px;
 }
 .product-details .product-name .brandName a{
-    color: #D0021B;
+    color: #737373;
     font-size: 12px;
     font-weight: 700;
     line-height: 14px;
@@ -882,7 +883,7 @@ input, select, textarea{
 .product-details .price-box .descricao-preco .valor-por strong{
     display: block;
     font-style: normal;
-    color: #D0021B;
+    color: #737373;
     font-size: 30px;
     font-weight: 700;
     line-height: 33px;
@@ -938,7 +939,9 @@ input, select, textarea{
 .product-info .seletor-sku .select label:hover,
 .product-info .seletor-sku .select label.checked,
 .product-info .seletor-sku .select label.sku-picked{
-    border-color: #D0021B;
+    border-color: #703693;
+    background-color: #703693;
+    color: #fff;
 }
 .product-info .buy-button-box{
     margin-top: 15px;
