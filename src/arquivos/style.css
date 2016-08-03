@@ -319,11 +319,13 @@ input, select, textarea{
     border-right: 1px solid rgba(0,0,0,0.1);
 }
 #top-menu .menu li a{
-    color: #777777;
-    font-size: 14px;
-    padding: 10px 20px 10px 20px;
+    color: #737373;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 12px 20px 12px 20px;
     display: block;
     text-decoration: none;
+    text-transform: uppercase;
 }
 #top-menu .menu li:hover a{
     background-color: #e7e7e7;
@@ -798,7 +800,7 @@ input, select, textarea{
 
 }
 .product-details .product-name{
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 .product-details .product-name .brandName a{
     color: #737373;
@@ -809,6 +811,9 @@ input, select, textarea{
 }
 .product-details .product-name .brandName a:hover{
     color: #333;
+}
+.product-details .product-name h1 {
+    margin-top: 10px;
 }
 .product-details .product-name .productName{
     color: #000;
