@@ -35,8 +35,19 @@ html>object{ display: none; }
     box-sizing: border-box;
 }
 
+/* fonts */
+
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
 span{
     font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'bebas_neuebold', 'Open Sans', sans-serif;
+    text-transform: uppercase;
 }
 
 a,button,input[type="submit"],input[type="button"],.btn,a:before,a:after{
@@ -144,9 +155,6 @@ input, select, textarea{
 .header .logo a{
     display: block;
 }
-/*.header .logo a:hover{*/
-    /*opacity: .6;*/
-/*}*/
 .header .mini-cart{
     position: relative;
 }
@@ -165,13 +173,24 @@ input, select, textarea{
     vertical-align: top;
 }
 .header .mini-cart span.badge{
-    background-color: #d0011b;
+    background-color: #703693;
     vertical-align: top;
     position: absolute;
     top: -9px;
     right: -15px;
 }
-#mini-cart-admake{ background-color: #fff; border: 1px solid #ccc; border-radius: 4px; box-shadow: 0 -5px 15px #D0D0D0; display: none; position: absolute; top: 34px; right: 15px; width: 320px; z-index: 9999; }
+#mini-cart-admake{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 -5px 15px #D0D0D0;
+    display: none;
+    position: absolute;
+    top: 34px;
+    right: 15px;
+    width: 320px;
+    z-index: 9999;
+}
 .col-mini-cart:hover #mini-cart-admake{ display: block ! important; }
 #mini-cart-admake:before{ border: 5px solid transparent; border-bottom-color: #fff; display: block; content: ""; position: absolute; top: -10px; right: 30px; }
 #mini-cart-admake .mini-cart-header{  }
@@ -197,8 +216,15 @@ input, select, textarea{
 #mini-cart-admake #mini-cart-admake-total{ color: #000000; font-size: 18px; font-weight: 700; line-height: 20px; }
 #mini-cart-admake .mini-cart-totais span{ color: #333; font-size: 13px; font-weight: 400; line-height: 20px; }
 #mini-cart-admake .mini-cart-botao{ display: block; margin-top: 10px; }
-#mini-cart-admake .mini-cart-botao .btn-finalizar-compra{ font-size: 20px; height: 50px; line-height: 25px; padding: 10px; background-color: #5BB75B;color: #fff;font-weight: 400;}
-#mini-cart-admake .mini-cart-botao .btn-finalizar-compra:hover{ opacity: .8; }
+#mini-cart-admake .mini-cart-botao .btn-finalizar-compra{
+    font-size: 20px; height: 50px; line-height: 25px;
+    padding: 10px;
+    background-color: #5ab584;
+    color: #fff; font-weight: 400;}
+#mini-cart-admake .mini-cart-botao .btn-finalizar-compra:hover{
+    background-color: #703693;
+    color: #fff;
+}
 
 
 
@@ -323,7 +349,8 @@ input, select, textarea{
 #top-menu .menu li a{
     color: #737373;
     font-size: 13px;
-    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
     padding: 12px 20px 12px 20px;
     display: block;
     text-decoration: none;
@@ -546,8 +573,7 @@ input, select, textarea{
 .showcase-default h2{
     color: #737373;
     display: block;
-    font-size: 18px;
-    font-weight: 700;
+    font-size: 22px;
     line-height: 28px;
     padding-bottom: 10px;
     text-transform: uppercase;
@@ -621,9 +647,9 @@ input, select, textarea{
     min-height: 40px;
 }
 .prateleira .product-name a{
-    color: #777;
+    color: #737373;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 20px;
 }
 .prateleira .product-name a:hover{
@@ -650,8 +676,8 @@ input, select, textarea{
 .prateleira .price .best-price{
     display: block;
     color: #737373;
-    font-size: 16px;
-    font-weight: 700;
+    font-size: 14px;
+    font-weight: 600;
     line-height: 20px;
 }
 .prateleira .btn-add-buy-button-asynchronous{
@@ -1360,6 +1386,11 @@ input, select, textarea{
 #departament-navegador .menu-departamento{
     display: none;
 }
+
+#departament-navegador h2 {
+    font-family: "Open Sans", sans-serif;
+}
+
 #admake-advanced-filter{
     background-color: #fff;
     border: 1px solid #E5E5E5;
@@ -1486,8 +1517,7 @@ input, select, textarea{
 }
 .title-category h2{
     color: #737373;
-    font-size: 18px;
-    font-weight: 700;
+    font-size: 26px;
     line-height: 20px;
     margin-top: 0;
 }
