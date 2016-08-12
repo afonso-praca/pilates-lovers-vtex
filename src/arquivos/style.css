@@ -759,6 +759,7 @@ input, select, textarea{
 /** ************************************************************************************ **/
 #box-bread-brumb{
     padding: 0 0 15px;
+    font-family: "Open Sans", sans-serif;
 }
 #box-bread-brumb ul{
     display: block;
@@ -775,27 +776,27 @@ input, select, textarea{
     display: inline-block;
     vertical-align: middle;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 600;
     line-height: 20px;
     margin-right: 5px;
-    color: #999999;
+    color: #737373;
 }
 #box-bread-brumb li:first-child:before{
     content: "";
     display: none;
 }
 #box-bread-brumb li a{
-    color: #000;
+    color: #737373;
     font-size: 12px;
-    font-weight: 300;
+    font-weight: 600;
     line-height: 20px;
     text-decoration: none;
 }
 #box-bread-brumb li a:hover{
-    color: #000;
+    color: #703693;
 }
 #box-bread-brumb li strong a{
-    color: #999999;
+    color: #737373;
 }
 
 /** ************************************************************************************ **/
@@ -833,7 +834,8 @@ input, select, textarea{
 .product-details .product-name .brandName a{
     color: #737373;
     font-size: 12px;
-    font-weight: 700;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
     line-height: 14px;
     text-decoration: none;
 }
@@ -844,8 +846,8 @@ input, select, textarea{
     margin-top: 10px;
 }
 .product-details .product-name .productName{
-    color: #000;
-    font-size: 18px;
+    color: #737373;
+    font-size: 26px;
     font-weight: 700;
     line-height: 20px;
 }
@@ -888,6 +890,7 @@ input, select, textarea{
     display: none;
 }
 .product-details .price-box{
+    font-family: "Open Sans", sans-serif;
     margin-top: 10px;
     padding-bottom: 15px;
     margin-bottom: 15px;
@@ -917,7 +920,7 @@ input, select, textarea{
     display: block;
     font-style: normal;
     color: #737373;
-    font-size: 30px;
+    font-size: 18px;
     font-weight: 700;
     line-height: 33px;
 }
@@ -931,6 +934,7 @@ input, select, textarea{
 }
 .product-details .seletor-sku{
     display: block;
+    font-family: "Open Sans", sans-serif;
 }
 .product-details .seletor-sku .topic{
     display: block;
@@ -938,9 +942,9 @@ input, select, textarea{
 }
 .product-details .seletor-sku .specification{
     display: block;
-    color: #333;
+    color: #737373;
     font-size: 12px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 17px;
 }
 .product-info .seletor-sku .select > span{
@@ -1034,7 +1038,7 @@ input, select, textarea{
 }
 .product-description .buy-together-content td.buy .comprar-junto a,
 .buy-button.buy-button-ref{
-    background-color: #5CB85C;
+    background-color: #703693;
     border: 0 none;
     border-radius: 6px;
     height: 54px;
@@ -1064,14 +1068,15 @@ input, select, textarea{
 .product-description .buy-together-content td.buy .comprar-junto a:focus,
 .product-info .buy-button-box .buy-button:hover,
 .product-info .buy-button-box .buy-button:focus{
-    color: #fff;
     text-decoration: none;
-    background-color: #36AC36;
+    color: #703693;
+    background-color: #dadada;
 }
 .product-info .shipping-box{
     margin-top: 15px;
     padding-top: 15px;
     border-top: 1px solid #ccc;
+    font-family: "Open Sans", sans-serif;
 }
 .product-info .shipping-box .shipping-value,
 .product-info .shipping-box .header,
@@ -1080,7 +1085,7 @@ input, select, textarea{
     display: none;
 }
 .product-info .shipping-box label{
-    color: #333;
+    color: #737373;
     font-size: 12px;
     font-weight: 700;
     line-height: 17px;
@@ -1154,6 +1159,7 @@ input, select, textarea{
 }
 .product-description{
     margin-top: 35px;
+    font-family: "Open Sans", sans-serif;
 }
 .product-description .btn-group{
     margin-bottom: 25px;
@@ -1161,6 +1167,7 @@ input, select, textarea{
 .product-description .product-description-box{
     display: block;
     padding-bottom: 25px;
+    color: #737373;
 }
 .product-description .product-description-box:after{
     display: block;
@@ -1174,7 +1181,7 @@ input, select, textarea{
 .product-description .product-description-box h4,
 .product-description .product-description-box .title,
 .product-description .product-description-box #divTitulo{
-    color: #333;
+    color: #737373;
     font-size: 18px;
     font-weight: 700;
     line-height: 20px;
@@ -1184,7 +1191,7 @@ input, select, textarea{
     padding-bottom: 10px;
 }
 .product-description .productDescription{
-    color: #333;
+    color: #737373;
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
