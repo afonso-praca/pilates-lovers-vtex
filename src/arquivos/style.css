@@ -849,7 +849,7 @@ input, select, textarea{
     color: #737373;
     font-size: 26px;
     font-weight: 700;
-    line-height: 20px;
+    line-height: 26px;
 }
 .product-details .codigo-produto{
 }
@@ -900,7 +900,7 @@ input, select, textarea{
 .product-details .price-box .descricao-preco .valor-de{
     display: block;
     font-style: normal;
-    color: #777;
+    color: #737373;
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
@@ -1055,6 +1055,10 @@ input, select, textarea{
     float: none;
     overflow: hidden;
 }
+#comprar-flutuante .buy-button:hover{
+    color: #703693;
+    background-color: #dadada;
+}
 .product-description .buy-together-content td.buy .comprar-junto a:focus,
 .product-description .buy-together-content td.buy .comprar-junto a:active:focus,
 .product-info .buy-button-box .buy-button:focus,
@@ -1183,12 +1187,14 @@ input, select, textarea{
 .product-description .product-description-box #divTitulo{
     color: #737373;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 20px;
     margin: 0 0 15px;
     padding: 0;
     border-bottom: 1px solid #ccc;
     padding-bottom: 10px;
+    font-family: "Open sans", sans-serif;
+    text-transform: initial;
 }
 .product-description .productDescription{
     color: #737373;
@@ -1299,7 +1305,8 @@ input, select, textarea{
 }
 #comprar-flutuante .productName{
     font-size: 14px;
-    color: #333;
+    font-family: "Open Sans", sans-serif;
+    color: #737373;
     line-height: 19px;
     font-weight: 700;
 }
@@ -1938,9 +1945,10 @@ input, select, textarea{
     background-color: #f8f8f8;
     padding: 15px 0 25px;
     margin-top: 20px;
+    font-family: "Open Sans", sans-serif;
 }
 .footer b{
-    color: #333;
+    color: #737373;
     display: block;
     font-size: 14px;
     font-weight: 700;
