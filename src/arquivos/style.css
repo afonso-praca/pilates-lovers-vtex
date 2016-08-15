@@ -469,6 +469,9 @@ input, select, textarea{
         font-size: 30px;
         line-height: 30px;
     }
+    .prateleira.vitrine > ul {
+        margin-left: 0 !important;
+    }
 }
 @media ( min-width: 768px) {
     #menu-mobile{
@@ -2106,7 +2109,6 @@ input, select, textarea{
     #comprar-flutuante .buy-button-box{
         float: right;
     }
-
 
     .prateleira.vitrine > ul > li,
     .n1colunas > ul > li,
