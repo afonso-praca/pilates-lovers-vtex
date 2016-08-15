@@ -213,17 +213,27 @@ input, select, textarea{
 #mini-cart-admake .mini-cart-item .qtd-valor .preco{ color: #333; font-size: 14px; font-weight: 700; line-height: 20px; }
 #mini-cart-admake .mini-cart-footer{ display: block; padding: 20px; }
 #mini-cart-admake .mini-cart-footer .mini-cart-totais{  }
-#mini-cart-admake #mini-cart-admake-total{ color: #000000; font-size: 18px; font-weight: 700; line-height: 20px; }
-#mini-cart-admake .mini-cart-totais span{ color: #333; font-size: 13px; font-weight: 400; line-height: 20px; }
+#mini-cart-admake #mini-cart-admake-total{
+    color: #737373;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+}
+#mini-cart-admake .mini-cart-totais span{
+    color: #737373;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+}
 #mini-cart-admake .mini-cart-botao{ display: block; margin-top: 10px; }
 #mini-cart-admake .mini-cart-botao .btn-finalizar-compra{
     font-size: 20px; height: 50px; line-height: 25px;
     padding: 10px;
-    background-color: #5ab584;
+    background-color: #703693;
     color: #fff; font-weight: 400;}
 #mini-cart-admake .mini-cart-botao .btn-finalizar-compra:hover{
-    background-color: #703693;
-    color: #fff;
+    background-color: #dadada;
+    color: #703693;
 }
 
 
