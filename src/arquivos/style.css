@@ -1160,9 +1160,9 @@ input, select, textarea{
     background-color: transparent;
 }
 .product-info .shipping-box .freight-values th{
-    color: #333;
+    color: #737373;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 14px;
     padding: 10px 5px;
 }
@@ -2014,6 +2014,7 @@ input, select, textarea{
 
 .copy-right{
     padding: 25px 0;
+    font-family: "Open Sans", sans-serif;
 }
 .copy-right .devs{
     display: block;
@@ -2021,9 +2022,9 @@ input, select, textarea{
 }
 .copy-right p{
     color: #bababa;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 400;
-    line-height: 16px;
+    line-height: 1.5;
 }
 
 #account-content .address-display-unit,
@@ -2290,4 +2291,19 @@ input, select, textarea{
 
 .modal-footer .btn-block + .btn-block {
     margin-left: 0;
+}
+
+.portal-notify-me-ref {
+    font-family: "Open Sans", sans-serif;
+    color: #737373;
+}
+
+.portal-notify-me-ref h3 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.portal-notify-me-ref p {
+    font-size: 13px;
+    line-height: 1.2em;
 }
