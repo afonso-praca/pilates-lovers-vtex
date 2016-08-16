@@ -379,20 +379,22 @@ input, select, textarea{
     float: none;
 }
 #menu-mobile ul li a{
-    color: #000;
+    color: #737373;
     font-size: 18px;
     line-height: 35px;
-    font-weight: 400;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
 }
 
 @media ( max-width: 767px) {
     #menu-mobile{
         position: fixed;
-        width: 75%;
+        width: 90%;
         left: 0;
         top: 0;
         bottom: 0;
-        background-color: #fff;
+        background-color: #fafafa;
         height: 100%;
         padding: 10px 20px;
         z-index: 9999999;
@@ -472,6 +474,12 @@ input, select, textarea{
     .prateleira.vitrine > ul {
         margin-left: 0 !important;
     }
+    .showcase-default h2 {
+        margin-bottom: 0;
+    }
+    .showcase-default {
+        padding-top: 5px !important;
+    }
 }
 @media ( min-width: 768px) {
     #menu-mobile{
@@ -536,6 +544,10 @@ input, select, textarea{
     font-size: 18px;
     line-height: 20px;
 }
+.owl-controls .btn  {
+    color: #703693;
+}
+
 .owl-controls .owl-buttons > div:hover{
     color: #e7e7e7;
 }
@@ -2074,9 +2086,12 @@ input, select, textarea{
 }
 
 @media ( max-width: 768px ){
-    body.produto{ padding-bottom: 80px; }
+    body.produto{ padding-bottom: 0px; }
     #comprar-flutuante{
-        display: block ! important
+        display: none ! important
+    }
+    .buy-button-box .box-qtd{
+        display: none;
     }
 
     .container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container{
@@ -2306,4 +2321,18 @@ input, select, textarea{
 .portal-notify-me-ref p {
     font-size: 13px;
     line-height: 1.2em;
+}
+
+.product-name-mobile {
+    font-family: "Bebas Neue", "Open Sans", sans-serif;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+.product-name-mobile #brand {
+    margin-bottom: 5px;
+}
+
+.thumbs {
+    margin-top: 15px;
 }
