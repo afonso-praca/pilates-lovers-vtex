@@ -1,6 +1,6 @@
 (function(){
   var self = this;
-  self.urlCO = "http://api.vtex.com/pilateslovers/dataentities/CO/documents";
+  self.urlCO = "http://api.vtexcrm.com.br/pilateslovers/dataentities/CO/documents";
 
   self.resetMessages = function() {
     $("#form_message_success").addClass('hide');
