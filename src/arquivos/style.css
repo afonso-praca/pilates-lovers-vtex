@@ -623,6 +623,9 @@ input, select, textarea{
     margin: 0;
 }
 
+.prateleira .box-item.product-off .product-image img {
+    opacity: .3;
+}
 .prateleira .box-item{
     opacity: 1;
     display: block;

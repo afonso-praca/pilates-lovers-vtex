@@ -30,7 +30,7 @@
         "Content-Type": "application/json"
       },
       data: JSON.stringify(jsonCO),
-      type: 'PATCH',
+      type: 'POST',
       url: urlCO,
       success: function (data) {
         console.log(data);
