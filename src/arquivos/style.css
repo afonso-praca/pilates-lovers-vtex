@@ -1357,7 +1357,7 @@ input, select, textarea{
     padding: 5px 10px;
     border: 1px solid #C3C3C3;
     border-left: 0 none;
-    background-color: #fff;
+    background-color: #fafafa;
     color: #333;
     font-size: 14px;
     font-weight: 400;
@@ -1369,22 +1369,28 @@ input, select, textarea{
     transition: .300s all;
 }
 .pages li:hover{
-    color: #d0011b;
+    color: #737373;
 }
 .pages li.first{
+    display: none;
+}
+.pages li.previous {
     border-radius: 4px 0 0 4px;
     border-left: 1px solid #C3C3C3;
 }
-.pages li.last{
+.pages li.next {
     border-radius: 0 4px 4px 0;
 }
+.pages li.last{
+    display: none;
+}
 .pages li.pgCurrent{
-    background-color: #d0011b;
+    background-color: #703693;
     color: #fff;
     cursor: default;
 }
 .pages li.pgEmpty{
-    background-color: #FDFDFD;
+    background-color: #fafafa;
     color: #333;
     cursor: default;
 }
@@ -1407,6 +1413,14 @@ input, select, textarea{
 
 .resultado-busca-filtro .orderBy label {
     font-weight: 400;
+}
+
+.sub .resultado-busca-filtro .orderBy  {
+    display: none;
+}
+
+.sub:nth-child(2) .resultado-busca-filtro .orderBy  {
+    display: block;
 }
 
 .resultado-busca-filtro > fieldset select{
