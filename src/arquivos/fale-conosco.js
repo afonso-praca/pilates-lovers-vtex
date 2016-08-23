@@ -34,7 +34,7 @@
       url: urlCO,
       success: function (data) {
         console.log(data);
-        ResetMessages();
+        self.resetMessages();
         $("#form_message_success").removeClass('hide');
         $("#name").val("");
         $("#email").val("");
@@ -43,7 +43,12 @@
       },
       error: function (data) {
         console.log(data);
+        self.resetMessages();
         $("#form_message_error").removeClass('hide');
+        $("#name").val("");
+        $("#email").val("");
+        $("#order").val("");
+        $("#message").val("");
       }
     });
   };
