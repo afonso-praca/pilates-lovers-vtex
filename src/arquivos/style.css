@@ -600,8 +600,24 @@ input, select, textarea{
     display: block;
     font-size: 22px;
     line-height: 28px;
-    padding-bottom: 10px;
     text-transform: uppercase;
+    padding-bottom: 0;
+}
+
+.showcase-default .title-block-right {
+    display: block;
+    font-family: "Open sans", sans-serif;
+    line-height: 48px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.showcase-default .title-block-right a {
+    margin-left: 15px;
+}
+
+.showcase-default .prateleira h2 {
+    display: none;
 }
 
 .prateleira.vitrine > ul{
