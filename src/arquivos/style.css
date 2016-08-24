@@ -602,6 +602,7 @@ input, select, textarea{
     line-height: 28px;
     text-transform: uppercase;
     padding-bottom: 0;
+    float: left;
 }
 
 .showcase-default .title-block-right {
