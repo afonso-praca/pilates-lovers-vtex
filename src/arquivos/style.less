@@ -1,3 +1,4 @@
+@import "variables";
 /*
  *
  * Desenvolvido por Integrando.se
@@ -8,6 +9,7 @@
  */
 
 @charset "UTF-8";
+
 /******************************************************************************************/
 /************* RESET **/
 /******************************************************************************************/
@@ -1992,10 +1994,13 @@ input, select, textarea{
     margin-bottom: 20px;
 }
 .conteudo-institucional{
-    color: #333;
+    color: @cinza-escuro;
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
+  h2 {
+    color: @cinza-escuro;
+  }
 }
 /** ************************************************************************************ **/
 /** *********** RODAPE **/
@@ -2345,26 +2350,23 @@ input, select, textarea{
 .portal-notify-me-ref {
     font-family: "Open Sans", sans-serif;
     color: #737373;
-}
-
-.portal-notify-me-ref h3 {
+  h3 {
     font-size: 22px;
     font-weight: 700;
-}
-
-.portal-notify-me-ref p {
+  }
+  p {
     font-size: 13px;
     line-height: 1.2em;
+  }
 }
 
 .product-name-mobile {
-    font-family: "Bebas Neue", "Open Sans", sans-serif;
-    text-transform: uppercase;
-    margin-top: 5px;
-}
-
-.product-name-mobile #brand {
+  font-family: "Bebas Neue", "Open Sans", sans-serif;
+  text-transform: uppercase;
+  margin-top: 5px;
+  #brand {
     margin-bottom: 5px;
+  }
 }
 
 .thumbs {
