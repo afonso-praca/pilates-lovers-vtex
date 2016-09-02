@@ -58,9 +58,9 @@ module.exports = (grunt) ->
     cssmin:
       main:
         expand: true
-        cwd: 'build/'
+        cwd: 'build/arquivos'
         src: ['*.css', '!*.min.css']
-        dest: 'build/'
+        dest: 'build/arquivos'
         ext: '.min.css'
 
     uglify:
