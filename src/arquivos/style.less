@@ -479,9 +479,6 @@ input, select, textarea{
     .showcase-default h2 {
         margin-bottom: 0;
     }
-    .showcase-default {
-        padding-top: 5px !important;
-    }
 }
 @media ( min-width: 768px) {
     #menu-mobile{
@@ -581,7 +578,7 @@ input, select, textarea{
 /** ************************************************************************************ **/
 .showcase-default{
     display: block;
-    padding: 20px 0 0 0;
+    padding: 0;
 }
 .showcase-owl .owl-controls .owl-buttons > div{
     width: 30px;
@@ -610,13 +607,14 @@ input, select, textarea{
 .showcase-default .title-block-right {
     display: block;
     font-family: "Open sans", sans-serif;
-    line-height: 48px;
+    line-height: 20px;
     font-weight: 600;
-    margin-top: 10px;
+    padding-top: 24px;
 }
 
 .showcase-default .title-block-right a {
-    margin-left: 15px;
+  margin-left: 15px;
+  color: @action-color;
 }
 
 .showcase-default .prateleira h2 {
@@ -704,14 +702,12 @@ input, select, textarea{
     text-decoration: none;
 }
 .prateleira .price{
-    display: block;
-    padding: 5px 0;
-}
-.prateleira .price a{
-    display: block;
+  display: block;
+  padding: 5px 0;
+  a {
     text-decoration: none;
-}
-.prateleira .price .old-price{
+  }
+  .old-price{
     display: block;
     color: #737373;
     font-size: 12px;
@@ -719,32 +715,17 @@ input, select, textarea{
     font-weight: 300;
     line-height: 18px;
     text-decoration: line-through;
-}
-.prateleira .price .best-price{
+  }
+  .best-price{
     display: block;
-    color: #737373;
+    color: @action-color;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: bold;
     line-height: 20px;
+  }
 }
 .prateleira .btn-add-buy-button-asynchronous{
-    border-radius: 2px;
-    background-color: #f3f3f3;
-    font-size: 14px;
-    font-weight: 700;
-    color: #703693;
-    padding: 10px;
-    display: block;
-    width: 120px;
-    margin: 0 auto;
-    text-decoration: none;
-}
-.prateleira .btn-add-buy-button-asynchronous:hover{
-    background-color: #703693;
-    color: #fff;
-}
-.prateleira .btn-add-buy-button-asynchronous .fa{
-    margin-left: 2px;
+  display: none;
 }
 .compare{
     display: block;
@@ -2374,6 +2355,7 @@ input, select, textarea{
 }
 
 .ofertas-condicoes-footer .row .span12 {
-    margin-top: 20px;
+    margin-top: 30px;
+  margin-bottom: 10px;
     box-shadow: 0 0 3px rgba(0,0,0,.3);
 }
