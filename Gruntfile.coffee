@@ -52,7 +52,7 @@ module.exports = (grunt) ->
           cwd: 'src/'
           src: ['**/*.less']
           dest: "build/"
-          ext: '.css'
+          ext: '.min.css'
         ]
 
     cssmin:

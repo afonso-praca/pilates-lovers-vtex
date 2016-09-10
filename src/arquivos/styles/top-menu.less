@@ -1,0 +1,32 @@
+@import "variables";
+
+#top-menu{
+  margin-bottom: 5px;
+  .menu{
+    background-color: @action-color;
+    padding-left: 0;
+    margin-left: 0;
+    li{
+      position: relative;
+      float: left;
+      margin: 0;
+      padding: 0;
+      border-right: 1px solid #fff;
+      a{
+        color: @cinza-claro;
+        font-size: 13px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        padding: 12px 20px 12px 20px;
+        display: block;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .menu:after{
+    content: "";
+    clear: both;
+    display: block;
+  }
+}

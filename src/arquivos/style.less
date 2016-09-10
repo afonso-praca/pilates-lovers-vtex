@@ -1,14 +1,10 @@
-@import "variables";
-/*
- *
- * Desenvolvido por Integrando.se
- * hello@integrando.se
- * 
- * Bootstrap v.3
- *
- */
-
 @charset "UTF-8";
+
+@import "styles/variables";
+@import "styles/top-menu";
+@import "styles/welcome-bar";
+@import "styles/institucional";
+@import "styles/fale-conosco";
 
 /******************************************************************************************/
 /************* RESET **/
@@ -103,41 +99,6 @@ input, select, textarea{
 /** ************************************************************************************ **/
 .header-container{
 
-}
-.welcome-bar{
-    background-color: #f8f8f8;
-    padding: 5px 0;
-    border-bottom: 1px solid #dfdfdf;
-}
-.welcome-bar em{
-    font-style: normal;
-    text-decoration: underline;
-}
-.welcome-bar p,
-.welcome-bar a,
-.welcome-bar span{
-    color: #777777;
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 20px;
-    margin: 0;
-}
-.welcome-bar a:hover{
-    color: #333;
-    text-decoration: none;
-}
-.welcome-bar div.welcome{
-
-}
-.welcome-bar .help-menu ul{
-    margin: 0;
-    padding: 0;
-}
-.welcome-bar .help-menu li{
-
-}
-.welcome-bar .help-menu span strong{
-    font-weight: 700;
 }
 
 .header{
@@ -335,42 +296,7 @@ input, select, textarea{
 }
 
 
-/** ************************************************************************************ **/
-/** *********** TOP MENU **/
-/** ************************************************************************************ **/
-#top-menu{
-    margin-bottom: 5px;
-}
-#top-menu .menu{
-    background-color: #f8f8f8;
-    padding-left: 0;
-    margin-left: 0;
-}
-#top-menu .menu:after{
-    content: "";
-    clear: both;
-    display: block;
-}
-#top-menu .menu li{
-    position: relative;
-    float: left;
-    margin: 0;
-    padding: 0;
-    border-right: 1px solid rgba(0,0,0,0.1);
-}
-#top-menu .menu li a{
-    color: #737373;
-    font-size: 13px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-    padding: 12px 20px 12px 20px;
-    display: block;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-#top-menu .menu li:hover a{
-    background-color: #e7e7e7;
-}
+
 
 /** VERSÃƒO MOBILE **/
 #menu-mobile ul{
@@ -654,28 +580,28 @@ input, select, textarea{
     margin-bottom: 10px;
     position: relative;
 }
-.prateleira .product-image:after{
-    background-color: rgba(0,0,0,.75);
-    content: "Veja +";
-    font: 40 12px/14px "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #fff;
-    padding: 5px 0;
-    /*border: 1px solid #ccc;*/
-    border-radius: 2px;
-    width: 66px;
-    height: 28px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin: -14px 0 0 -33px;
-    visibility: hidden;
-    opacity: 0;
-    -webkit-transition: 0.3s all; transition: 0.3s all;
-}
-.prateleira .box-item:hover .product-image:after{
-    visibility: visible;
-    opacity: 1;
-}
+//.prateleira .product-image:after{
+//    background-color: rgba(0,0,0,.75);
+//    content: "Veja +";
+//    font: 40 12px/14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+//    color: #fff;
+//    padding: 5px 0;
+//    /*border: 1px solid #ccc;*/
+//    border-radius: 2px;
+//    width: 66px;
+//    height: 28px;
+//    position: absolute;
+//    left: 50%;
+//    top: 50%;
+//    margin: -14px 0 0 -33px;
+//    visibility: hidden;
+//    opacity: 0;
+//    -webkit-transition: 0.3s all; transition: 0.3s all;
+//}
+//.prateleira .box-item:hover .product-image:after{
+//    visibility: visible;
+//    opacity: 1;
+//}
 .prateleira .product-image img{
     display: block;
     max-width: 100%;
@@ -1963,26 +1889,6 @@ input, select, textarea{
 }
 
 
-/** ************************************************************************************ **/
-/** *********** INSTITUCIONAL **/
-/** ************************************************************************************ **/
-.titulo-institucional{
-    font-size: 18px;
-    color: #333;
-    line-height: 12px;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-}
-.conteudo-institucional{
-    color: @cinza-escuro;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 18px;
-  h2 {
-    color: @cinza-escuro;
-  }
-}
 /** ************************************************************************************ **/
 /** *********** RODAPE **/
 /** ************************************************************************************ **/
