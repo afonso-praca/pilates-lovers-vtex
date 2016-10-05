@@ -1004,15 +1004,18 @@ input, select, textarea{
     float: left;
     padding: 5px 20px;
     text-decoration: none;
+  i {
+    display: none;
+  }
 }
 #comprar-flutuante .buy-button.buy-button-ref{
     float: none;
     overflow: hidden;
 }
-#comprar-flutuante .buy-button:hover{
-    color: #703693;
-    background-color: #dadada;
-}
+//#comprar-flutuante .buy-button:hover{
+//    color: #703693;
+//    background-color: #dadada;
+//}
 .product-description .buy-together-content td.buy .comprar-junto a:focus,
 .product-description .buy-together-content td.buy .comprar-junto a:active:focus,
 .product-info .buy-button-box .buy-button:focus,
@@ -1027,8 +1030,8 @@ input, select, textarea{
 .product-info .buy-button-box .buy-button:hover,
 .product-info .buy-button-box .buy-button:focus{
     text-decoration: none;
-    color: #703693;
-    background-color: #dadada;
+    color: #fff;
+    background-color: #703693;
 }
 .product-info .shipping-box{
     margin-top: 15px;
@@ -2264,4 +2267,59 @@ input, select, textarea{
     margin-top: 30px;
   margin-bottom: 10px;
     box-shadow: 0 0 3px rgba(0,0,0,.3);
+}
+
+#account-content {
+    font-family: "Open sans", sans-serif;
+    h5 {
+        font-weight: bold;
+    }
+    .profile-detail-display-info {
+        color: @cinza-escuro;
+        .profile-detail-display-nickname {
+            display: none;
+        }
+        .title {
+            font-weight: bold;
+        }
+    }
+    .address-display-block {
+        .address-display {
+            .address-display-unit-info {
+                color: @cinza-escuro;
+            }
+        }
+    }
+}
+
+#address-edit, #editar-perfil {
+    height: auto !important;
+    bottom: inherit;
+    input, select, textarea {
+      color: #000;
+    }
+    .btn-primary {
+        color: #fff;
+        background-color: @action-color;
+    }
+}
+
+.myorders {
+    .nav-pills>li.active>a, .nav-pills>li.active>a:focus,
+    .nav-pills>li.active>a:hover {
+        background-color: @action-color;
+    }
+    .repeat-order .btn, .showTrackingInfo .btn {
+        background-color: @action-color;
+        color: #fff;
+    }
+  .subscriptions-page {
+    .page-header {
+      .nav {
+        li:last-child {
+          display: none;
+        }
+      }
+    }
+  }
 }
