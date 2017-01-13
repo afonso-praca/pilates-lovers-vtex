@@ -12,6 +12,19 @@
     },  4000);
   };
 
+  var checkAvailability = function () {
+    $(window).on('skuSelected.vtex', function(evt, productId, sku){
+      console.log(sku);
+      if (sku){
+        if (sku.available == true){
+          $('.product-info .availability').show();
+        } else {
+          $('.product-info .availability').hide();
+        }
+      }
+    });
+  };
+
   var verifyUserLoggin = function () {
     $(window).on('orderFormUpdated.vtex', function () {
       if (vtexjs.checkout.orderForm.loggedIn){
@@ -24,6 +37,7 @@
   };
 
   verifyUserLoggin();
-  startSlicker()
+  startSlicker();
+  checkAvailability();
 
 })();
