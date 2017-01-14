@@ -14,7 +14,6 @@
 
   var checkAvailability = function () {
     $(window).on('skuSelected.vtex', function(evt, productId, sku){
-      console.log(sku);
       if (sku){
         if (sku.available == true){
           $('.product-info .availability').show();

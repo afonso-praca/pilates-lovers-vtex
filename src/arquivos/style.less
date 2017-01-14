@@ -558,6 +558,15 @@ input, select, textarea{
     float: left;
 }
 
+#product-page {
+  .showcase-default h2{
+    margin-top: 10px;
+  }
+  .related-products-box {
+    padding-bottom: 10px !important;
+  }
+}
+
 .showcase-default .title-block-right {
     display: block;
     font-family: "Open sans", sans-serif;
@@ -823,7 +832,7 @@ input, select, textarea{
   }
 }
 .product-details .product-name{
-    margin-bottom: 15px;
+    //margin-bottom: 15px;
 }
 .product-details .product-name .brandName a{
     color: #737373;
@@ -885,10 +894,16 @@ input, select, textarea{
 }
 .product-details .price-box{
     font-family: "Open Sans", sans-serif;
-    margin-top: 10px;
-    padding-bottom: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
     border-bottom: 1px solid #ccc;
+    .descricao-preco .valor-por strong {
+        font-style: normal;
+        color: @action-color;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 18px;
+    }
 }
 #comprar-flutuante .descricao-preco .valor-de,
 .product-details .price-box .descricao-preco .valor-de{
@@ -909,8 +924,7 @@ input, select, textarea{
     font-size: 0;
     line-height: 0;
 }
-#comprar-flutuante .descricao-preco .valor-por strong,
-.product-details .price-box .descricao-preco .valor-por strong{
+#comprar-flutuante .descricao-preco .valor-por strong{
     display: block;
     font-style: normal;
     color: #737373;
@@ -1178,10 +1192,10 @@ input, select, textarea{
     text-transform: initial;
 }
 .product-description .productDescription{
-    color: #737373;
+    color: @cinza-escuro;
     font-size: 14px;
     font-weight: 400;
-    line-height: 18px;
+    line-height: 20px;
 }
 .product-description #caracteristicas tr{
     border-bottom: 1px solid #ddd;
@@ -1388,7 +1402,6 @@ input, select, textarea{
 }
 
 .navigation-tabs{
-    background: url("/arquivos/loader-admake-filter.gif") no-repeat scroll center transparent;
     min-height: 100px;
     width: 100%;
 }
