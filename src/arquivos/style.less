@@ -892,17 +892,22 @@ input, select, textarea{
     font-weight: 400;
     display: none;
 }
-.product-details .price-box{
+.product-details .price-box {
     font-family: "Open Sans", sans-serif;
     margin-bottom: 10px;
     padding-bottom: 5px;
     border-bottom: 1px solid #ccc;
-    .descricao-preco .valor-por strong {
+    .descricao-preco {
+      .valor-por strong {
         font-style: normal;
         color: @action-color;
         font-size: 18px;
         font-weight: 700;
         line-height: 18px;
+      }
+      .valor-de {
+        margin-bottom: 8px;
+      }
     }
 }
 #comprar-flutuante .descricao-preco .valor-de,
@@ -939,6 +944,7 @@ input, select, textarea{
     font-size: 14px;
     font-weight: 400;
     line-height: 16px;
+    margin-bottom: 8px;
 }
 
 //
