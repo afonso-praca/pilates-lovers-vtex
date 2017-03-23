@@ -253,47 +253,49 @@ input, select, textarea{
     background-color: #e6e6e6;
     border-color: #adadad;
 }
-.ui-autocomplete{
-    background-color: #fff;
-    padding: 20px;
-    margin: 5px 0 0 0;
-    width: 320px ! important;
-    box-shadow: 0 -5px 15px #D0D0D0;
-    border-radius: 4px;
-}
-.ui-autocomplete:before{
+
+// autocomplete
+
+.ui-autocomplete {
+  background-color: #fff;
+  padding: 20px;
+  margin: 5px 0 0 0;
+  width: 320px !important;
+  box-shadow: 1px 1px 2px 0 #ccc;
+  border-radius: 0;
+  .ui-menu-item {
+    display: block;
+    padding: 6px 0;
+    a {
+      color: #777;
+      font-size: 15px;
+      line-height: 17px;
+      &:hover {
+        color: #333;
+        text-decoration: none;
+      }
+    }
+    img {
+      display: inline-block;
+      margin-right: 10px;
+    }
+  }
+  .ui-state-hover {
+    background: #fff !important;
+    border: none !important;
+    font-weight: normal;
+  }
+  &:before {
     border: 5px solid transparent;
     border-bottom-color: #fff;
     content: "";
     position: absolute;
     left: 30px;
     top: -10px;
-}
-.ui-autocomplete .ui-menu-item{
-    display: block;
-    padding: 6px 0;
-}
-.ui-autocomplete .ui-menu-item a{
-    color: #777;
-    font-size: 15px;
-    line-height: 17px;
-}
-.ui-autocomplete .ui-menu-item a:hover{
-    color: #000;
-    text-decoration: none;
-}
-.ui-autocomplete .ui-menu-item img{
-    display: inline-block;
-    margin-right: 10px;
-}
-.header .sing-in{
-
+  }
 }
 .header .sing-in a{
     padding: 0 10px;
-}
-.header .sing-in a:hover{
-
 }
 .header .sing-in a .fa{
     font-size: 20px;
@@ -301,9 +303,7 @@ input, select, textarea{
 }
 
 
-
-
-/** VERSÃƒO MOBILE **/
+/** VERSAO MOBILE **/
 #menu-mobile ul{
     display: block;
 }
