@@ -22,6 +22,11 @@ module.exports = (grunt) ->
   portalProxyOptions = url.parse("http://#{portalHost}/")
   portalProxyOptions.preserveHost = true
 
+  rewriteLocation = (location) ->
+    return location
+      .replace('https:', 'http:')
+      .replace(environment, 'vtexlocal')
+
   config =
     clean:
       main: ['build']
@@ -52,7 +57,7 @@ module.exports = (grunt) ->
           cwd: 'src/'
           src: ['**/*.less']
           dest: "build/"
-          ext: '.min.css'
+          ext: '.css'
         ]
 
     cssmin:
@@ -76,7 +81,7 @@ module.exports = (grunt) ->
         }]
 
     sprite:
-      all: 
+      all:
         src: 'src/sprite/*.png'
         dest: 'build/spritesheet.png'
         destCss: 'build/sprite.css'
@@ -98,6 +103,8 @@ module.exports = (grunt) ->
           port: process.env.PORT || 80
           middleware: [
             middlewares.disableCompression
+            middlewares.rewriteLocationHeader(rewriteLocation)
+            middlewares.replaceHost(portalHost)
             middlewares.replaceHtmlBody(environment)
             httpPlease(host: portalHost, verbose: verbose)
             serveStatic('./build')
@@ -129,16 +136,16 @@ module.exports = (grunt) ->
         files: ['Gruntfile.coffee']
 
   tasks =
-    # Building block tasks
+# Building block tasks
     build: ['clean', 'copy:main', 'sprite', 'coffee', 'less', 'imagemin']
     min: ['uglify', 'cssmin'] # minifies files
-    # Deploy tasks
+# Deploy tasks
     dist: ['build', 'min'] # Dist - minifies files
     test: []
-    # Development tasks
+# Development tasks
     default: ['build', 'connect', 'watch']
     devmin: ['build', 'min',
-             'connect:http:keepalive'] # Minifies files and serve
+      'connect:http:keepalive'] # Minifies files and serve
 
   # Project configuration.
   grunt.config.init config
