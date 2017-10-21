@@ -74,8 +74,8 @@ module.exports = (grunt) ->
       main:
         files: [{
           expand: true
-          cwd: 'build/'
-          src: ['*.js', '!*.min.js']
+          cwd: 'build/arquivos'
+          src: ['*.js', '*.min.js']
           dest: 'build/'
           ext: '.min.js'
         }]
@@ -113,6 +113,20 @@ module.exports = (grunt) ->
             middlewares.errorHandler
           ]
 
+    concat:
+      options:
+        separator: ''
+      dist: {
+        src: ['build/bootstrap.min.js',
+          'build/pace.min.js',
+          'build/plt-custom-scripts.min.js',
+          'build/owl.min.js',
+          'build/menu-responsivo.min.js'
+          'build/advanced-filter.min.js',
+          'build/admake-mini-cart.min.js'],
+        dest: 'build/all.min.js',
+      }
+
     watch:
       options:
         livereload: true
@@ -140,7 +154,7 @@ module.exports = (grunt) ->
     build: ['clean', 'copy:main', 'sprite', 'coffee', 'less', 'imagemin']
     min: ['uglify', 'cssmin'] # minifies files
 # Deploy tasks
-    dist: ['build', 'min'] # Dist - minifies files
+    dist: ['build', 'min', 'concat:dist'] # Dist - minifies files
     test: []
 # Development tasks
     default: ['build', 'connect', 'watch']

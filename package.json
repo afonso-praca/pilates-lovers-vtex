@@ -36,5 +36,8 @@
     "livereload",
     "vtex"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "source-map": "^0.6.1"
+  }
 }
